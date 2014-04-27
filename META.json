@@ -37,12 +37,17 @@
             "namespace::autoclean" : "0",
             "perl" : ">= 5.14.0"
          }
+      },
+      "test" : {
+         "requires" : {
+            "Test::Pod" : "0"
+         }
       }
    },
    "provides" : {
       "UAV::Pilot::WumpusRover" : {
          "file" : "lib/UAV/Pilot/WumpusRover.pm",
-         "version" : "0.1"
+         "version" : "0.2"
       },
       "UAV::Pilot::WumpusRover::Control" : {
          "file" : "lib/UAV/Pilot/WumpusRover/Control.pm"
@@ -96,11 +101,11 @@
    "release_status" : "stable",
    "resources" : {
       "license" : [
-         "http://opensource.org/licenses/bsd-license.php"
+         "http://opensource.org/licenses/BSD-3-Clause"
       ],
       "repository" : {
          "url" : "https://github.com/frezik/UAV-Pilot-WumpusRover"
       }
    },
-   "version" : "0.1"
+   "version" : "0.2"
 }

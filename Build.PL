@@ -20,6 +20,9 @@ my $build = Module::Build->new(
         'Tie::IxHash'          => 0,
         'UAV::Pilot'           => '>= 0.9',
     },
+    test_requires => {
+        'Test::Pod' => 0,
+    },
     recommends => {
         'Getopt::Long'              => 0,
         'UAV::Pilot::SDL'           => 0,
