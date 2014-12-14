@@ -172,7 +172,7 @@ sub _reduce_queue_length_to_max
 {
     my ($self) = @_;
 
-    my @keys = keys $self->_packet_queue;
+    my @keys = keys %{ $self->_packet_queue };
     my $packets_removed = 0;
     while( scalar(@keys) >= $self->MAX_PACKET_QUEUE_LENGTH ) {
         my $next_key = shift @keys;
